@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            background-color: rgb(54, 75, 75);
+            height: 80vh;
+            width: 30vw;
+
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* animation: harry_animation; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 3; */
+            /* animation-timing-function: ease-cubic-bezier(0, 0, 0, 1.21); */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: forward; */
+            animation:
+                harry_animation 3s cubic-bezier(0, 0, 0, 1.21) 1s 3 alternate-reverse,
+                Harry2 1s ease-in-out 3s 1;
+
+
+            /* animation-direction: reverse; */
+            /* animation-play-state: paused; */
+        }
+
+        @keyframes harry_animation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(300px);
+                background-color: aqua;
+            }
+        }
+
+        @keyframes Haary2 {
+            0% {
+                transform: rotate(60 deg);
+            }
+
+            20% {
+                transform: rotate(120 deg);
+            }
+
+            40% {
+                transform: rotate(180 deg);
+            }
+
+            60% {
+                transform: rotate(220 deg);
+            }
+
+            80% {
+                transform: rotate(280 deg);
+            }
+
+            100% {
+                transform: rotate(340 deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

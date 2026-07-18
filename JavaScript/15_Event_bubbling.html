@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: rgb(76, 116, 150);
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(7, 89, 161);
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(76, 77, 79);
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childContainer">
+            <div class="child">
+                I am a Child.
+            </div>
+        </div>
+    </div>
+    <script>
+        // Event bubbling happens due to default feature of Browser.
+        // Event bubbling happens when we remove event.object   
+
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopImmediatePropagation() // this will help to stop Event Bubbling
+            alert("Child was Clicked.")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopImmediatePropagation() // this will help to stop Event Bubbling
+            alert("ChildContainer was Clicked.")
+        })
+
+        document.querySelector(".container").addEventListener("click", () => {
+
+            alert("Container was Clicked.")
+        })
+
+        // Dealing with time managment.
+
+
+        function getRandomColor() { // Random color generator
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+
+            return `rgb(${r},${g},${b})`;
+        }
+
+
+        
+        // it executes infinite times with the given interval time.
+        let a = setInterval(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 2000); // here 2000 is time interval in milisecond.
+        console.log(a); // it will give the value of a
+
+        clearInterval(a) // it will stop the clear interval
+
+
+        // it executes one times with the given Starting time.
+        let b = setTimeout(() => {
+            document.querySelector(".container").style.background = getRandomColor();
+        }, 2000);// here 2000 is time interval in milisecond.
+        console.log(b); // it will give the value of a
+
+        clearTimeout(b) // it will stop the clear interval
+    </script>
+</body>
+
+</html>

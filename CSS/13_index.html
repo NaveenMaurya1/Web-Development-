@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position-relative</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 433px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black; 
+        }
+        
+        .box1{
+            background-color: rgb(80, 212, 212);
+
+            position: sticky;
+            top: 0px;
+
+            height: 111px;            
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            /* position: absolute;
+            top: 4px;
+            left: 4px; */
+            
+        }
+        .box2{
+            background-color: rgb(233, 125, 125);
+            /* position: relative;
+            top: 34px;
+            left: 50px; */
+
+        }
+        .box3{
+            background-color: pink;
+
+            position: fixed;
+            bottom: 0px;
+            left: 8vw;
+
+            height: 111px;
+            
+
+          }
+        .box4{
+            background-color: rgb(217, 217, 85);
+            /* this things (z index) helps to put things up */
+            /* position: relative;
+            z-index: 1; */ 
+
+        }
+        .parent{
+            margin: 43px;
+            padding: 34px;
+            /* height: 33px; */
+            border: 3px solid rgb(57, 31, 31);
+            
+            /*Exceptional: transform, filter, or perspective properties can also make an element appear as positioned*/
+            /*transform: translate(0)*/
+            /*filter: invert(0)*/
+            /*perspective: 0em*/
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</div>
+</body>
+
+</html>

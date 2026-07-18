@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS Display property</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      .box {
+         border: 2px solid blue;
+         display: inline-block;
+         /*setting inline-block property jisse ki inline behave kare aur margin aur padding bhi lage */
+         margin: 34px;
+         padding: 45px;
+      }
+
+      /* .box1 {
+         display: none;/*Isse box gayab hoga aur uski jagah bhi
+         visibility: hidden;
+         /*Isse box gayab hoga lekin uski jagah nahi hogi
+      } */
+   </style>
+</head>
+
+<body>
+   <div class="box box1">
+      I am box.
+   </div>
+   <div class="box"> also nice box</div>
+   <span>I am a </span>
+   <span>boy</span>
+</body>
+
+</html>

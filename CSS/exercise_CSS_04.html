@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS exercise</title>
+    <style>
+        :root{
+            --backgroundcolor1:pink;
+            --backgroundcolor2:rgb(173, 73, 90);
+            --backgroundcolor3:rgb(71, 63, 65);
+            --backgroundcolor4:rgb(210, 46, 73);
+            --backgroundcolor5:rgb(153, 130, 134);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainbox {
+            margin-bottom: 0px;
+            height: 120vh;
+            background-color: var(--backgroundcolor1);
+        }
+
+        .b2 {
+            background-color: var(--backgroundcolor2);
+            height: 60vh;
+            margin: 5px;
+            position: relative;
+
+        }
+
+        ul {
+            background-color: var(--backgroundcolor3);
+            padding: 19px;
+
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            color: white;
+        }
+
+        li {
+            display: inline;
+            margin: 110px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: larger;
+
+        }
+
+        .s1 {
+            background-color: var(--backgroundcolor4);
+            padding: 20vh;
+            margin-left: 31vh;
+            position: absolute;
+            top: 48px;
+            left: 36px;
+        }
+
+        .s2 {
+            background-color: var(--backgroundcolor4);
+            padding: 20vh;
+            margin-left: 41vh;
+            position: absolute;
+            top: 48px;
+            left: 462px;
+        }
+
+        .j {
+            border: 2px solid rgb(83, 124, 2);
+            border-radius: 88px;
+            background-color: bisque;
+            height: 20vh;
+            width: 86vh;
+            margin-left: 50vh;
+            text-align: center;
+            font-size: 5vh;
+
+        }
+
+        .j p {
+            margin-top: 40px;
+        }
+
+        .k {
+            border: 2px solid blue;
+            border-radius: 30px;
+            width: 27px;
+            height: 27px;
+            margin-left: 1110px;
+            margin-top: -126px;
+            background-color: blueviolet;
+            position: fixed;
+        }
+
+        .m {
+            border: 2px solid rgb(235, 198, 198);
+            background-color: aliceblue;
+            height: 11vh;
+            width: 100%;
+            margin-top: 18vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="b1">
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Contact</li>
+                <li>About Us</li>
+            </ul>
+            <div class="b2">
+                <span class="s1">b2</span>
+                <span class="s2">b2</span>
+            </div>
+        </div>
+        <div class="j">
+            <p>Sigma Web Development Course</p>
+        </div>
+        <div class="k"></div>
+        <div class="m"></div>
+    </div>
+</body>
+
+</html>

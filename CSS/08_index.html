@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing unit -px,rem,em,vh,vw,% & more
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 14px;
+        }
+       .box{
+           box-sizing: border-box;
+           border: 2px solid black; 
+           /* width: 233px; */
+           width: 80 vw;
+           height: 10 vh;
+           margin: auto; /*"auto" means left and right se margin lagega */
+           background-color: aquamarine; 
+       }
+       .container{
+           box-sizing: border-box;
+           border: 2px solid black; 
+           /* width: 233px; */
+           width: 80 vw;
+           min-height: 50 vh;
+           font-size: 16px;
+           margin: 23px auto; /*23px top and bottom ki margin hai*/
+           background-color: aquamarine; 
+       }
+       .container > p{
+        font-size: 1.5em; /*"em" multiply the size of inherit fontsize */
+        font-size: 2rem;/*"rem" multiply the size of root fontsize -"html root"*/
+        border: 2px solid rebeccapurple;
+        width: 50%;
+
+       }
+       .container > div{
+           border: 2px solid pink;
+           width: 50%; /*ye 50 persent of parent inherit karti hai*/
+       }
+       .mycount{
+            box-sizing: border-box;
+            margin: 23px auto; 
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            /* width: 100vmin; */
+            
+
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a Box.
+    </div>
+     <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquam porro, laboriosam exercitationem, labore nostrum optio odio qui voluptas obcaecati doloribus delectus. Non cupiditate eos iste sunt sit nos trum illum.
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aut modi consequuntur perspiciatis alias!
+            </div>
+        </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laudantium deleniti enim repellat dicta illum dolor deserunt, quaerat, provident beatae, et veniam illo.</p>
+     </div>
+    <div class="mycount">
+       Hey prabhu utha le inko
+    </div>
+</body>
+</html>

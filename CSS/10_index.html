@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outline</title>
+    <style>
+
+        .box{
+            padding: 34px;
+            border: 2px solid black;
+            box-shadow: 5px 5px 5px rgb(203, 106, 203); /*box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color;
+*/
+
+        }
+        .element_shadow{
+            text-shadow: 5px 5px 5px rgb(181, 27, 53); 
+            outline: 2px solid blue ;/*Difference between outline and border is that border is a part of box model and outline don't take spaces */
+            /* border: 2px solid red; */
+            border-radius: 10px; /*Gives curve*/
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box.
+    </div>
+    <p class="element_shadow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor incidunt hic accusantium labore nisi asperiores, ipsum velit at quae quas? Incidunt, totam dolores?
+    </p>
+</body>
+</html>

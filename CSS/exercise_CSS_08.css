@@ -1,0 +1,387 @@
+body {
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_background {
+    background:
+        radial-gradient(farthest-corner, transparent -50%, rgba(0, 0, 0, 5.8)),
+        url("https://assets.nflxext.com/ffe/siteui/vlv3/b9448d14-5983-4ffc-a4d6-e22223108466/web/IN-en-20260302-TRIFECTA-perspective_1ef91182-c674-4632-9bec-d185993ab154_large.jpg");
+
+    /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/b9448d14-5983-4ffc-a4d6-e22223108466/web/IN-en-20260302-TRIFECTA-perspective_1ef91182-c674-4632-9bec-d185993ab154_large.jpg"); */
+
+    height: 100vh;
+    background-size: max(1200px, 100vw);
+    /* width: 100vw; */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+
+.main_box {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    /* background-color: red; */
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    flex-wrap: wrap;
+}
+
+nav span svg {
+    width: 22vh;
+    position: relative;
+    z-index: 10;
+    margin-top: 30px;
+}
+
+.nav_bttn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 23px;
+}
+
+.bttn {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 100%;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    /* z-index: 10; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* padding: 23px; */
+
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 110vh;
+    text-align: center;
+
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.hero h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bttn {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    width: 11vh;
+    height: 5vh;
+    cursor: pointer;
+}
+
+
+.bttn-red-signIn {
+    background-color: red;
+    color: white;
+
+}
+
+.bttn-select {
+    color: white;
+    background-color: rgb(21, 20, 20);
+    border: 1px solid rgb(121, 121, 121);
+    width: 18vh;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.inp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 120px;
+}
+
+.bttn-red-getstart {
+    background-color: red;
+    color: white;
+    width: 28vh;
+    height: 8vh;
+    font-size: x-large;
+
+}
+
+.inp input {
+    width: 26vw;
+    height: 8vh;
+    border-radius: 4px;
+    padding: 0px 10px;
+    font-size: large;
+    background-color: rgb(23, 23, 23, 0.87);
+    border: 1px solid rgb(121, 121, 121);
+    color: white;
+}
+
+.page-divider {
+    height: 10vh;
+    background: linear-gradient(181deg, #192247 12%, #000000 96.86%);
+    border: 3px solid red;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 50% 50% 0 0;
+    width: 99.99%;
+    position: relative;
+    top: 20px;
+}
+
+.trending_now {
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 103vh;
+    left: 13vw;
+}
+
+.movie_poster {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+
+}
+
+.poster {
+    position: relative;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.poster:hover {
+    /* background-color: blue; */
+    transform: scale(1.05);
+}
+
+.poster img {
+    /* width: 200px; */
+    border-radius: 8px;
+
+
+}
+
+.number {
+    position: absolute;
+    bottom: -20px;
+    left: -25px;
+    font-size: 120px;
+    font-weight: 900;
+    color: black;
+    -webkit-text-stroke: 2px rgb(212, 212, 212);
+    font-family: sans-serif;
+
+}
+
+.More_to_join {
+    font-family: sans-serif;
+    color: white;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 9.89vw;
+    margin-bottom: 20px;
+
+}
+
+.detail_cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border-radius: 1.5rem;
+    width: 15rem;
+    height: 50vh;
+    color: white;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.card_text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_text h3 {
+    margin: 21px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.card_text p {
+    margin: 2px 21px;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.02rem;
+
+}
+
+.card_svg {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+}
+
+.feq_ask_ques {
+    font-family: sans-serif;
+    color: white;
+    margin: 30px;
+    margin-left: 9.3vw;
+    margin-bottom: 16px;
+}
+
+.ques_box {
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    max-width: 80vw;
+    margin: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.ques_box:hover {
+    background-color: rgb(72, 72, 72);
+    ;
+}
+
+.ques-text {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer_input h3 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer_input input {
+    width: 40vw;
+    height: 8vh;
+    border-radius: 4px;
+    padding: 0px 10px;
+    font-size: large;
+    background-color: rgb(23, 23, 23, 0.87);
+    border: 1px solid rgb(121, 121, 121);
+    color: white;
+}
+
+.lower_detail {
+    max-width: 70vw;
+    margin: auto;
+    font-family: sans-serif;
+
+}
+
+.other_links ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px 40px;
+    /*max-width: 60vw; */
+    padding: 0;
+}
+
+.helpline p a {
+    color: rgb(160, 160, 160);
+
+}
+
+.lower_detail div p {
+    color: rgb(160, 160, 160);
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+.other_links ul li a {
+    color: rgb(160, 160, 160);
+}
+
+.lower_detail button {
+    margin-top: 65px;
+    margin-bottom: 35px;
+
+}
+
+.Netflix_india {
+    margin-bottom: 40px;
+    color: rgb(160, 160, 160);
+}
+
+.last_line {
+    margin-bottom: 100px;
+    color: rgb(116, 116, 116);
+    font-size:13px;
+    font-weight:600;
+}
+.last_line > a{
+    color: rgb(63, 63, 226);
+}

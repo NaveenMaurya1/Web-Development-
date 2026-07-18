@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid rgb(215, 32, 32);
+        }
+        img{
+            /* float: left; */
+            float: right;
+        }
+        .card:nth-child(3){
+           background-color: aqua;
+           clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/054/483/670/small/man-is-sitting-in-a-boat-on-a-lake-with-the-sun-setting-in-the-background-the-scene-is-peaceful-and-serene-with-the-man-enjoying-the-calm-waters-and-the-beautiful-sunset-free-photo.jpg" alt=" Boat image" width="230px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sunt commodi sed similique, enim natus doloremque autem eligendi architecto iure pariatur alias dolorem ipsa? Ab autem quibusdam ea laudantium cumque fugit incidunt magnam ducimus?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repudiandae deleniti blanditiis vero voluptatibus. Amet, soluta! Non, quos eum minima repudiandae sequi facere blanditiis sed et ullam quibusdam cum cumque earum alias quidem magni, consequatur reiciendis ea ut! Expedita quia quidem saepe.</div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>

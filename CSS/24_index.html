@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and position</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 500px;
+            width: 688px;
+            background-image:url(https://media.gettyimages.com/id/1368265555/photo/vortex-split-view-of-blue-ocean-waters-surface.jpg?s=612x612&w=0&k=20&c=S7U0qen2-Jmm8hNqaKYXNSV5H-xDNNk9uYlSM6xLGfU=) ;
+            background-position: top left;
+            background-repeat: no-repeat; /*No repetationn of image*/
+
+            /* background-repeat: repeat-x;  */
+            /* background-repeat: repeat-y;  */
+
+            /* background-clip: content-box; */
+        }
+        img{
+            height: 500px;
+            width: 688px;
+
+            object-fit: contain;
+            /* object-fit: scale-down;   */
+
+
+            /* object-fit: cover; */
+            /* object-position: top right ; */
+            /* object-position: 60px 40px ; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      
+         <img src="https://i.pinimg.com/originals/89/2a/1b/892a1b62419bc4f27fb0f1c86a81f0de.jpg" alt="Knight">
+    </div>
+</body>
+
+</html>

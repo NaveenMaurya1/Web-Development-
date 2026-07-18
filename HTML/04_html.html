@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making forms</title>
+</head>
+<body><form action="post"> <!--Making forms-->
+    <div>
+        <label for="username">Enter your name</label>
+        <input type="text" id="username" name="username" placeholder="Enter your Username">
+    </div>
+    <div>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" name="Subscribe" id="subscribe" value="yes">
+        <label for="subscribe">subscribe to news later</label>
+    </div>
+    <div>
+        <label for="comment">Enter your comment here...<label>
+        <br> <!-- its BR tag-->
+       <textarea name="comment" rows="5" cols="50" id=""></textarea> 
+    </div>
+    <div>
+        <select name="Fruits">
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="cherry">Cherry</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>

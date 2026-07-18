@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_CSS_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navb {
+            border-bottom: 1px solid #ddd;
+            height: 9vh;
+            background-color: rgb(248, 248, 248);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .header_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header_feature ul {
+            display: flex;
+        }
+
+        .header_feature ul li {
+            list-style: none;
+            padding: 2vh;
+            font-family: sans-serif;
+
+        }
+
+        .header_feature ul li a {
+            text-decoration: none;
+
+        }
+
+        .headline {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            margin-top: 25px;
+            font-family: sans-serif;
+
+        }
+
+        .headline1 {
+            font-size: 4.5vh;
+            padding: 5px;
+            font-family: sans-serif;
+        }
+
+        .headline_details {
+            margin-top: 25px;
+
+        }
+
+        .hero {
+            max-width: 45%;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .box {
+            margin-top: 20px;
+            margin-left: 16vh;
+            border: 2px solid rgb(28, 219, 219);
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: rgb(28, 219, 219);
+            height: 45px;
+            width: 48vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease;
+
+        }
+
+        .box:hover {
+            background-color: rgb(118, 118, 235);
+            transform: translateY(-3px);
+        }
+
+        .details {
+            margin-left: 50vh;
+            margin-top: 5vh;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+        }
+
+        .d {
+            font-size: small;
+            color: rgb(161, 161, 161);
+        }
+
+        .eng {
+            /* border: 2px solid black; */
+            background-color: rgb(249, 247, 245);
+            /* height: 200px; */
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .b {
+            display: grid;
+            grid-template-columns: 0.3fr 0.3fr 0.3fr;
+            column-gap: 50px;
+            row-gap: 50px;
+            max-width: 75%;
+            margin: auto;
+        }
+
+        .j {
+            font-size: small;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(143, 143, 143);
+
+        }
+
+        .m {
+            margin-top: 15px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .bttn {
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            width: 18vh;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            font-size: small;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .bttn:hover {
+            background-color: rgb(49, 49, 176);
+            transform: translateY(-3px);
+        }
+
+        .bttn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .bt {
+            display: flex;
+            gap: 8px;
+            margin-top: 8vh;
+            margin-right: 10px;
+            margin-left: 10px;
+
+        }
+
+        .aqua {
+            background-color: rgb(13, 186, 186);
+        }
+
+        .green {
+            background-color: rgb(50, 167, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navb">
+        <div class="header">
+            <div class="header_logo">
+
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_black-new.png" width="40px"
+                    alt="UltraEdit">
+                <h2>UltraEdit</h2>
+
+            </div>
+            <div class="header_feature">
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <span class="headline">
+            <p class="headline1">Download</p>
+            <h1>UltraEdit</h1>
+            <p class="headline1">for Windows</p>
+        </span>
+        <div>
+            <p class="headline_details">
+                Download and try UltraEdit before you buy it! This Download includes the full windows version of the
+                text editor.
+            </p>
+            <div class="box">DOWNLOAD MAC OR LINUX VERSION</div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="details">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_black-new.png" width="35px"
+            alt="UltraEdit">
+
+        <span style="font-family: sans-serif;">Download UltraEdit </span>
+        <span class="d">&nbsp;v21.330 version</span>
+
+    </div>
+    <div class="b ">
+        <div class="eng">
+            <div class="m">English</div>
+            <div class="j">English</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">Deutsch</div>
+            <div class="j">Dutch</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">Italino</div>
+            <div class="j">Italian</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">Español</div>
+            <div class="j">Spanish</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+
+        </div>
+        <div class="eng">
+            <div class="m">français</div>
+            <div class="j">French</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">Português Brasileiro</div>
+            <div class="j">Brazilian Portuguese</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">日本語</div>
+            <div class="j">Japanese</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">한국인</div>
+            <div class="j">Korean</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">中国人</div>
+            <div class="j">Chinese</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+        <div class="eng">
+            <div class="m">中國語</div>
+            <div class="j">Chinese(Traditional)</div>
+            <div class="bt">
+                <div class="bttn aqua"><a href="#">Download 32-bit</a></div>
+                <div class="bttn green"><a href="#">Download 64-bit</a></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

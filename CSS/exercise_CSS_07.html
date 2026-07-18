@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bounce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            background-color: rgb(124, 113, 113);
+            width: 90vw;
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .ball_1{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(110, 207, 24);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: anim_y 1s ease-out 0.5s infinite alternate,
+            anim_x 3s linear 0.5s infinite ;
+
+            animation-play-state: paused;
+        }
+
+        .ball_2{
+            position: absolute;
+            background-color: rgb(2, 137, 255);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: ball_y 3s ease-out 0.5s 4 alternate,
+            ball_x 3s ease-in-out 0.5s 4 alternate;
+            
+            animation-play-state: paused;
+
+        }
+
+        @keyframes ball_x {
+            from {
+                left: 0;
+                background-color: rgb(2, 137, 255);
+            }
+
+            to {
+                left: 89%;
+                background-color: red;
+            }
+        }
+
+        @keyframes ball_y {
+            0% {
+                top: 0;
+            }
+
+            25% {
+                top: calc(70vh - 59px);
+                /* Container height minus ball height */
+            }
+
+            50% {
+                top: 0;
+                /* Container height minus ball height */
+            }
+
+            75% {
+                top: calc(70vh - 59px);
+                /* Container height minus ball height  */
+            }
+
+            100% {
+                top: 0;
+            }
+
+
+        }
+
+        /*  Harry's Method   */
+
+        @keyframes anim_x {
+            from {
+                left: 0;
+
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes anim_y {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball_1">
+        </div>
+        <div class="ball_2">
+        </div>
+    </div>
+</body>
+
+</html>

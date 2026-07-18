@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_CSS_05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navb {
+            border-bottom: 1px solid #ddd;
+            height: 9vh;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .header_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header_feature ul {
+            display: flex;
+        }
+
+        .header_feature ul li {
+            list-style: none;
+            padding: 2vh;
+            font-family: sans-serif;
+
+        }
+
+        .header_feature ul li a {
+            text-decoration: none;
+
+        }
+
+        .headline {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            margin-top: 25px;
+            font-family: sans-serif;
+
+        }
+
+        .headline1 {
+            font-size: 4.5vh;
+            padding: 5px;
+            font-family: sans-serif;
+        }
+
+        .headline_details {
+            margin-top: 25px;
+
+        }
+
+        .hero {
+            max-width: 45%;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .box {
+            margin-top: 20px;
+            margin-left: 16vh;
+            border: 2px solid rgb(28, 219, 219);
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 8px;
+            background-color: rgb(28, 219, 219);
+            height: 45px;
+            width: 48vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease;
+
+        }
+
+        .box:hover {
+            background-color: rgb(118, 118, 235);
+            transform: translateY(-3px);
+        }
+
+        .details {
+            margin-left: 50vh;
+            margin-top: 5vh;
+            display: flex;
+            align-items: center;
+
+        }
+        .d{
+            font-size: small; 
+            color: rgb(161, 161, 161);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navb">
+        <div class="header">
+            <div class="header_logo">
+
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_black-new.png" width="40px"
+                    alt="UltraEdit">
+                <h2>UltraEdit</h2>
+
+            </div>
+            <div class="header_feature">
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <span class="headline">
+            <p class="headline1">Download</p>
+            <h1>UltraEdit</h1>
+            <p class="headline1">for Windows</p>
+        </span>
+        <div>
+            <p class="headline_details">
+                Download and try UltraEdit before you buy it! This Download includes the full windows version of the
+                text editor.
+            </p>
+            <div class="box">DOWNLOAD MAC OR LINUX VERSION</div>
+
+        </div>
+
+    </div>
+
+    </div>
+    <div class="details">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_black-new.png" width="35px"
+            alt="UltraEdit">
+
+        <span style="font-family: sans-serif;" >Download UltraEdit </span>
+        <span class="d" >&nbsp;v21.330 version</span>
+    </div>
+</body>
+
+</html>
