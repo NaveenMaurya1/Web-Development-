@@ -1,0 +1,5 @@
+this file would be public after when we use express.static and public folder become public ,because file.txt is inside public folder
+
+we can use any name for the folder but we use public name 
+
+http://localhost:3000/01_file.txt     to access this file , we would use this url 
