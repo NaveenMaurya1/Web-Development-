@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Post Request</title>
+</head>
+<body>
+    <h1>
+        HELLO JI WORLD JI
+    </h1>
+    <script>
+async function testpost(){          // this is a way to check post request in but we dont usually use this method . we use postman 
+let a = await fetch ("/",{ method:"POST"} )
+let b = await a.text()
+console.log(b)
+}
+
+testpost()
+async function testput(){          // this is a way to check put request in but we dont usually use this method . we use postman 
+let a = await fetch ("/",{ method:"PUT"} )
+let b = await a.text()
+console.log(b)
+}
+
+testput()
+
+// async function testput(){          // this is a way to check post request in but we dont usually use this method . we use postman 
+// let a = await fetch ("/",{ method:"PUT"} )
+// let b = await a.text()
+// console.log(b)
+// }
+
+// testput()
+
+    </script>
+</body>
+</html>
