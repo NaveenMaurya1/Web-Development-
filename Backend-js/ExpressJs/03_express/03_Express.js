@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 const fs = require("fs")
+const blog = require('./blog')
 
 app.use(express.static("public"))  // middleware is thing which we manipulate the request 
+app.use("/blog",blog)
 
 const mylog = function(req,res,next){     // we dont send response here....but we acn do it 
     // console.log(req.header)
@@ -16,6 +18,7 @@ const mylog = function(req,res,next){     // we dont send response here....but w
 app.use(mylog)
 
 const mylogger = function(req,res,next){
+    req.hi = " hey buddy ,what are you doing ?"       // odering matters most in the middleware ...
     console.log("LOGGED! M1")
     next()
 }
