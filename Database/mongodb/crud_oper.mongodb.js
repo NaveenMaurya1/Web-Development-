@@ -1,3 +1,6 @@
+
+// create
+
 use("Cruddb")
 
 db.createCollection("Course")
@@ -38,16 +41,22 @@ db.course.insertMany([
     }
 ])
 
+// Researching...
+
 let a = db.course.find({price : 0})
 console.log(a)
 
 let b = db.course.findOne({price : 20000})
 console.log(b)
 
-db.course.updateOne({price: 20000},
-    {$set:{price:1000}})
+// UPDATE
 
-db.course.updateMany({price: 0},
-    {$set:{price:1000}})
+// db.course.updateOne({price: 20000},
+//     {$set:{price:1000}})
 
-    
+// db.course.updateMany({price: 0},
+//     {$set:{price:1000}})
+
+// db.course.deleteOne({price : 0})
+// db.course.deleteMany({price : 0})
+
