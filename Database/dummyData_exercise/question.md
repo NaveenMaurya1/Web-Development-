@@ -8,4 +8,4 @@
 
 // Generate 10 such records when a button called generate data is clicked! 
 // Create an Express app with mongoose to acheive it 
-// Everytime the button is clicked, you should clear the collection
+// Everytime the button is clicked, you should clear the collection ...... this is not solve yet because i dont want to like to do that
