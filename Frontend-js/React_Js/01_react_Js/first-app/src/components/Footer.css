@@ -1,0 +1,15 @@
+
+/* .footer{
+    position: fixed;
+    bottom: 0;
+    background-color: brown;
+} */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(67, 29, 29);
+  color: beige;
+}

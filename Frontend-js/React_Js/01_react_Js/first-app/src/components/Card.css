@@ -1,0 +1,9 @@
+.cards{
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    overflow:hidden;
+    
+}
+.cards h2,p{
+   color: black;
+}
