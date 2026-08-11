@@ -24,7 +24,7 @@ function App() {
   const Todo =({todo}) =>{
       return(
         <>
-          <div className="m-4 border border-2  border-purple-400">
+          <div className="m-4 border-2  border-purple-400">
             <div className="todo">{todo.tittle}</div>
           <div className="todo">{todo.desc}</div>
           </div>
