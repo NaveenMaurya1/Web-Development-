@@ -12,3 +12,13 @@ we need to install mongoose ..
 To create a token in this we need a package name "jsonwebtoken"...
 "npm install jsonwebtoken"
 after that we need to generate JWT secret key , so we can use Jwt secret key genrator website.
+
+
+accessToken = memory (access token stores in cookies)
+refreshToken = cookies (refresh token stores in cookies)
+so to store in cookies we have to install a package
+"npm i cookie-parser" 
+
+
+We have to install "nodemailer" to send otp through email for otp verification...
+"npm install nodemailer" 
