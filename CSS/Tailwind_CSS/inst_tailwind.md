@@ -26,3 +26,7 @@ Breakpoints in tailwindcss ---
          2xl	       1536px	   @media (width >= 96rem)
 
 
+6. npm install tailwindcss @tailwindcss/vite     
+
+    this is used for React + Vite + Tailwind... projects
+    
